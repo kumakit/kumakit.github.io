@@ -2,42 +2,79 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
-    <title>kuma headquarters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KUMA HEADQUARTERS // SYS.COM</title>
     <link href="styles/style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Hello</p>
-    <p>At this site, for links to the folowing contents sites:</p>
-    <p>I'm in the process of making it.</p>
-    <p>
-    <a href="https://kumadata.netlify.app/" target="_blank">Kuma Data Science:netlify,MkDocs</a>
-    <ul>
-        <li>data science</li>
-        <li>data analysis</li>
-        <li>python</li>
-    </ul>
-    </p>
-    <p>
-    <a href="https://kumadata.streamlit.app/" target="_blank">Kuma Data Apps:streamlit</a>
-    <ul>
-        <li>Python apps</li>  
-    </ul>
-    </p>
-    <p>work in progress…</p>
-    <div class="cube">
-        <div class="surface front"></div>
-        <div class="surface right"></div>
-        <div class="surface left"></div>
-        <div class="surface top"></div>
-        <div class="surface bottom"></div>
-        <div class="surface back"></div>
-      </div>
-      <br>
-    <footer>
-        <hr>
-        <p>copyright kuma 2023 / All right reserved.</p>
-    </footer>
+    <div class="monitor-frame">
+        <header class="sys-header">
+            <div class="status-indicator">
+                <span class="blinking-dot"></span>
+                <span>SYSTEM ONLINE</span>
+            </div>
+            <h1>kuma>hq_</h1>
+            <div class="sys-info">
+                <span>USR: KUMA</span>
+                <span>LOC: EARTH</span>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <section class="panel about-panel">
+                <div class="panel-header">SYS.MSG</div>
+                <div class="panel-content type-out">
+                    <p>> Hello.</p>
+                    <p>> At this site, for links to the following contents sites:</p>
+                    <p>> Status: Work in progress...</p>
+                </div>
+            </section>
+
+            <section class="panel links-panel">
+                 <div class="panel-header">DATALINKS</div>
+                 <div class="panel-content">
+                    
+                    <div class="data-node">
+                        <h3><a href="https://kumadata.netlify.app/" target="_blank">Kuma Data Science</a></h3>
+                        <div class="node-meta">
+                            <span>[PLATFORM: NETLIFY/MKDOCS]</span>
+                            <ul>
+                                <li>> data science</li>
+                                <li>> data analysis</li>
+                                <li>> python</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="data-node">
+                        <h3><a href="https://kumadata.streamlit.app/" target="_blank">Kuma Data Apps (Main)</a></h3>
+                        <div class="node-meta">
+                            <span>[PLATFORM: STREAMLIT]</span>
+                            <ul>
+                                <li>> Python apps</li>  
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="data-node new-node">
+                        <h3><a href="https://kumatiki.f5.si/" target="_blank">Kuma Data Apps (Sub)</a></h3>
+                        <div class="node-meta">
+                            <span class="highlight">[NEW LINK DETECTED]</span>
+                            <ul>
+                                <li>> External Application</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                 </div>
+            </section>
+        </main>
+
+        <footer class="sys-footer">
+            <div class="scanline"></div>
+            <p>COPYRIGHT KUMA 2023 // ALL RIGHTS RESERVED.</p>
+        </footer>
+    </div>
 </body>
 </html>
