@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="monitor-frame">
-        <header class="sys-header">
+        <header class="sys-header glass-panel">
             <div class="status-indicator">
                 <span class="blinking-dot"></span>
-                <span>SYSTEM ONLINE</span>
+                <span>SYSTEM MONITORING</span>
             </div>
             <h1>kuma>hq_</h1>
             <div class="sys-info">
@@ -22,7 +22,7 @@
         </header>
 
         <main class="dashboard">
-            <section class="panel about-panel">
+            <section class="panel about-panel glass-panel">
                 <div class="panel-header">SYS.MSG</div>
                 <div class="panel-content type-out">
                     <p>> Hello.</p>
@@ -31,14 +31,14 @@
                 </div>
             </section>
 
-            <section class="panel links-panel">
+            <section class="panel links-panel glass-panel">
                  <div class="panel-header">DATALINKS</div>
                  <div class="panel-content">
                     
-                    <div class="data-node">
-                        <h3><a href="https://kumadata.netlify.app/" target="_blank">Kuma Data Science</a></h3>
+                    <div class="data-node" data-monitor-url="https://kumadata.netlify.app/">
+                        <h3><a href="https://kumadata.netlify.app/" target="_blank">Data Science</a></h3>
                         <div class="node-meta">
-                            <span>[PLATFORM: NETLIFY/MKDOCS]</span>
+                            <span>[PLATFORM: NETLIFY/MKDOCS]</span> <span class="status-badge status-checking">[🟡 CHECKING...]</span>
                             <ul>
                                 <li>> data science</li>
                                 <li>> data analysis</li>
@@ -47,23 +47,39 @@
                         </div>
                     </div>
 
-                    <div class="data-node">
-                        <h3><a href="https://kumadata.streamlit.app/" target="_blank">Kuma Data Apps (Main)</a></h3>
+                    <div class="data-node" data-monitor-url="https://kumadata.streamlit.app/">
+                        <h3><a href="https://kumadata.streamlit.app/" target="_blank">Data Apps (Main)</a></h3>
                         <div class="node-meta">
-                            <span>[PLATFORM: STREAMLIT]</span>
+                            <span>[PLATFORM: STREAMLIT]</span> <span class="status-badge status-checking">[🟡 CHECKING...]</span>
                             <ul>
                                 <li>> Python apps</li>  
                             </ul>
                         </div>
                     </div>
 
-                    <div class="data-node new-node">
-                        <h3><a href="https://kumatiki.f5.si/" target="_blank">Kuma Data Apps (Sub)</a></h3>
+                    <div class="data-node" data-monitor-url="https://kumatiki.f5.si/">
+                        <h3><a href="https://kumatiki.f5.si/" target="_blank">Data Apps (Sub)</a></h3>
                         <div class="node-meta">
-                            <span class="highlight">[NEW LINK DETECTED]</span>
+                            <span>[PLATFORM: OCI]</span> <span class="status-badge status-checking">[🟡 CHECKING...]</span>
                             <ul>
                                 <li>> External Application</li>
                             </ul>
+                        </div>
+                    </div>
+
+                    <div class="data-node github-node">
+                        <h3><a href="https://github.com/kumakit" target="_blank">GitHub Profile</a></h3>
+                        <div class="node-meta">
+                            <span>[PLATFORM: GITHUB]</span>
+                            <ul>
+                                <li>> portfolio</li>
+                                <li>> oss contributions</li>
+                                <li>> scripts & tools</li>
+                            </ul>
+                            <div class="github-contribution" style="margin-top: 15px;">
+                                <span style="display: block; margin-bottom: 5px; color: var(--accent-green);">> CONTRIBUTION GRAPH</span>
+                                <img src="https://ghchart.rshah.org/2ea043/kumakit" alt="kumakit's Github chart" style="max-width: 100%; filter: invert(1) hue-rotate(180deg) brightness(1.1); opacity: 0.8;" />
+                            </div>
                         </div>
                     </div>
 
@@ -71,10 +87,39 @@
             </section>
         </main>
 
-        <footer class="sys-footer">
+        <footer class="sys-footer glass-panel">
             <div class="scanline"></div>
             <p>COPYRIGHT KUMA 2023 // ALL RIGHTS RESERVED.</p>
         </footer>
     </div>
+
+    <!-- ====== System Monitoring Script ====== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nodes = document.querySelectorAll('.data-node[data-monitor-url]');
+            
+            nodes.forEach(node => {
+                const url = node.getAttribute('data-monitor-url');
+                const badge = node.querySelector('.status-badge');
+                if (!url || !badge) return;
+
+                // サードパーティのプロキシが原因でエラーになる場合があるため、
+                // no-cors モードのネイティブ fetch でサーバーへの到達可能性だけを確認します。
+                fetch(url, { mode: 'no-cors', cache: 'no-store' })
+                    .then(() => {
+                        // Opaque response になるため200判定はできませんが、
+                        // 通信が確立して何らかの応答が返ってきた場合は ONLINE とみなします。
+                        badge.className = 'status-badge status-online';
+                        badge.textContent = '[🟢 ONLINE]';
+                    })
+                    .catch(error => {
+                        // サーバーダウン、ネットワークエラー、DNSエラーの場合
+                        badge.className = 'status-badge status-offline';
+                        badge.textContent = '[🔴 OFFLINE]';
+                        console.error('Monitoring Error (' + url + '):', error);
+                    });
+            });
+        });
+    </script>
 </body>
 </html>
