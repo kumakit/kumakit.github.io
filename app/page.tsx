@@ -14,7 +14,7 @@ export default function Home() {
 
       {/* Bento Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-min">
-        
+
         {/* Intro Hero (2 cols, span 1 row) */}
         <div className="md:col-span-2 bg-white rounded-[2.5rem] p-8 md:p-10 shadow-soft border border-gray-100 flex flex-col justify-center">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
@@ -30,8 +30,8 @@ export default function Home() {
         {/* Profile Card (1 col) */}
         <div className="bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col gap-6">
           <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full w-fit border border-gray-100">
-             <User size={14} className="text-accent-pink" />
-             <span className="text-xs font-semibold tracking-wide">THE PERSONA</span>
+            <User size={14} className="text-accent-pink" />
+            <span className="text-xs font-semibold tracking-wide">THE PERSONA</span>
           </div>
           <div>
             <h2 className="text-xl font-bold text-primary">KUMA</h2>
@@ -47,25 +47,25 @@ export default function Home() {
 
         {/* GitHub Contribution Card (1 col) */}
         <a href="https://github.com/kumakit" target="_blank" rel="noopener noreferrer" className="bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col group hover:shadow-lg transition-all hover:-translate-y-1 block">
-           <div className="flex items-center justify-between mb-6">
-             <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
-               <Github size={14} className="text-primary" />
-               <span className="text-xs font-semibold tracking-wide">GITHUB</span>
-             </div>
-           </div>
-           <div className="block w-full mt-auto">
-             <div className="bg-gray-50 rounded-2xl p-4 overflow-hidden flex items-center justify-center min-h-[120px] border border-gray-100">
-                 {/* Re-using the chart from previous site, but inverted for light theme */}
-                 <img src="https://ghchart.rshah.org/3B82F6/kumakit" alt="Github Chart" className="w-full opacity-80 group-hover:opacity-100 transition-opacity" />
-             </div>
-           </div>
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
+              <Github size={14} className="text-primary" />
+              <span className="text-xs font-semibold tracking-wide">GITHUB</span>
+            </div>
+          </div>
+          <div className="block w-full mt-auto">
+            <div className="bg-gray-50 rounded-2xl p-4 overflow-hidden flex items-center justify-center min-h-[120px] border border-gray-100">
+              {/* Re-using the chart from previous site, but inverted for light theme */}
+              <img src="https://ghchart.rshah.org/3B82F6/kumakit" alt="Github Chart" className="w-full opacity-80 group-hover:opacity-100 transition-opacity" />
+            </div>
+          </div>
         </a>
 
         {/* Streamlit Card */}
         <div className="bg-[#FFF5F5] rounded-[2.5rem] p-8 shadow-soft border border-red-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
-             <span className="text-4xl">📱</span>
-             <SystemMonitor url="https://kumadata.streamlit.app/" />
+            <span className="text-4xl">📱</span>
+            <SystemMonitor url="https://kumadata.streamlit.app/" />
           </div>
           <div className="mt-auto">
             <a href="https://kumadata.streamlit.app/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
@@ -78,8 +78,8 @@ export default function Home() {
         {/* MkDocs Card */}
         <div className="bg-[#F0FDF4] rounded-[2.5rem] p-8 shadow-soft border border-green-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
-             <span className="text-4xl">📘</span>
-             <SystemMonitor url="https://kumadata.netlify.app/" />
+            <span className="text-4xl">📘</span>
+            <SystemMonitor url="https://kumadata.netlify.app/" />
           </div>
           <div className="mt-auto">
             <a href="https://kumadata.netlify.app/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
@@ -99,15 +99,15 @@ export default function Home() {
             </a>
           </div>
           <div className="sm:self-start">
-             <SystemMonitor url="https://toukei-kentei-drill.vercel.app/" />
+            <SystemMonitor url="https://toukei-kentei-drill.vercel.app/" />
           </div>
         </div>
 
         {/* OCI Sub Apps (1 col) */}
         <div className="bg-[#EFF6FF] rounded-[2.5rem] p-8 shadow-soft border border-blue-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
-             <span className="text-4xl">🖥️</span>
-             <SystemMonitor url="https://kumatiki.f5.si/" />
+            <span className="text-4xl">🖥️</span>
+            <SystemMonitor url="https://apps.bearworks.uk/" />
           </div>
           <div className="mt-auto">
             <a href="https://kumatiki.f5.si/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
