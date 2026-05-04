@@ -46,20 +46,20 @@ export default function Home() {
         </div>
 
         {/* GitHub Contribution Card (1 col) */}
-        <div className="bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col group hover:shadow-lg transition-shadow cursor-pointer" onClick="window.open('https://github.com/kumakit', '_blank')">
+        <a href="https://github.com/kumakit" target="_blank" rel="noopener noreferrer" className="bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col group hover:shadow-lg transition-all hover:-translate-y-1 block">
            <div className="flex items-center justify-between mb-6">
              <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
                <Github size={14} className="text-primary" />
                <span className="text-xs font-semibold tracking-wide">GITHUB</span>
              </div>
            </div>
-           <a href="https://github.com/kumakit" target="_blank" rel="noopener noreferrer" className="block w-full">
+           <div className="block w-full mt-auto">
              <div className="bg-gray-50 rounded-2xl p-4 overflow-hidden flex items-center justify-center min-h-[120px] border border-gray-100">
                  {/* Re-using the chart from previous site, but inverted for light theme */}
                  <img src="https://ghchart.rshah.org/3B82F6/kumakit" alt="Github Chart" className="w-full opacity-80 group-hover:opacity-100 transition-opacity" />
              </div>
-           </a>
-        </div>
+           </div>
+        </a>
 
         {/* Streamlit Card */}
         <div className="bg-[#FFF5F5] rounded-[2.5rem] p-8 shadow-soft border border-red-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
