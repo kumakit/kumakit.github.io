@@ -17,4 +17,54 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  /* Icon with Blob effect */
+  .icon-with-blob {
+    @apply relative inline-flex items-center justify-center mx-1 align-middle;
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .icon-with-blob svg {
+    @apply relative z-10;
+  }
+
+  .blob {
+    @apply absolute inset-0 rounded-full blur-[8px] opacity-40;
+    transform: scale(1.5);
+  }
+
+  .blob-lg {
+    @apply blur-[12px];
+    transform: scale(2.5);
+  }
+
+  .blob-sm {
+    @apply blur-[4px];
+    transform: scale(0.8);
+  }
+
+  .blob-blue { @apply bg-blue-400; }
+  .blob-green { @apply bg-green-400; }
+  .blob-purple { @apply bg-purple-400; }
+  .blob-pink { @apply bg-pink-400; }
+  .blob-gray { @apply bg-gray-400; }
+  .blob-yellow { @apply bg-yellow-400; }
+
+  /* Wave Animation */
+  .animate-wave {
+    animation: wave 2.5s infinite;
+    transform-origin: 70% 70%;
+  }
+}
+
+@keyframes wave {
+  0% { transform: rotate(0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate(0.0deg) }
+  100% { transform: rotate(0.0deg) }
 }
