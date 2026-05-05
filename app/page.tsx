@@ -1,5 +1,5 @@
 import { SystemMonitor } from "@/components/SystemMonitor";
-import { Github, MapPin, User, Terminal, Database, Globe, Bot, Book, BarChart3 } from "lucide-react";
+import { Github, MapPin, User, Terminal, Database, Globe, Bot, Book, BarChart3, Hand, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
@@ -18,9 +18,18 @@ export default function Home() {
         {/* Intro Hero (2 cols, span 1 row) */}
         <div className="md:col-span-2 bg-white rounded-[2.5rem] p-8 md:p-10 shadow-soft border border-gray-100 flex flex-col justify-center">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
-            <span className="inline-block animate-wave">👋</span> HI! I DESIGN & BUILD <br />
+            <span className="icon-with-blob animate-wave">
+              <Hand size={40} className="text-accent-yellow" />
+              <span className="blob blob-yellow"></span>
+            </span>{" "}
+            HI! I DESIGN & BUILD <br />
             <span className="text-accent-blue">DATA EXPERIENCES</span>, <br />
-            APPS <span className="inline-block text-accent-yellow">✨</span>, & MODELS.
+            APPS{" "}
+            <span className="icon-with-blob">
+              <Sparkles size={32} className="text-accent-yellow" />
+              <span className="blob blob-yellow"></span>
+            </span>{" "}
+            & MODELS.
           </h1>
           <p className="mt-4 text-muted text-lg font-medium max-w-lg">
             Welcome to bearworks.uk. This is the central hub for monitoring and navigating my digital ecosystem.
