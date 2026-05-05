@@ -8,7 +8,7 @@ export default function Home() {
       <header className="flex justify-center pt-4">
         <div className="bg-white px-6 py-2 rounded-full shadow-soft flex items-center gap-2 text-sm font-medium border border-gray-100">
           <Terminal size={16} className="text-accent-blue" />
-          <span>HQ Index</span>
+          <span>Index</span>
         </div>
       </header>
 
@@ -23,7 +23,7 @@ export default function Home() {
             APPS <span className="inline-block text-accent-yellow">✨</span>, & MODELS.
           </h1>
           <p className="mt-4 text-muted text-lg font-medium max-w-lg">
-            Welcome to KUMA Headquarters. This is the central hub for monitoring and navigating my digital ecosystem.
+            Welcome to bearworks.uk. This is the central hub for monitoring and navigating my digital ecosystem.
           </p>
         </div>
 
