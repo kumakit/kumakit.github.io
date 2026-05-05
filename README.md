@@ -1,6 +1,6 @@
-# KUMA HEADQUARTERS // SYS.COM
+# bearworks.uk // SYS.COM
 
-This repository hosts the source code for the **KUMA HEADQUARTERS** portal site. It serves as a central hub and system monitor linking to various contents and platforms.
+This repository hosts the source code for the **bearworks.uk** portal site. It serves as a central hub and system monitor linking to various contents and platforms.
 
 ## Features
 - **Data Science**: Documentation and notes on data science, data analysis, and Python (Hosted on Netlify/MkDocs).
