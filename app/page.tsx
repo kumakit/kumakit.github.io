@@ -45,8 +45,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* GitHub Contribution Card (1 col) */}
-        <a href="https://github.com/kumakit" target="_blank" rel="noopener noreferrer" className="bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col group hover:shadow-lg transition-all hover:-translate-y-1 block">
+        {/* GitHub Contribution Card (2 cols) */}
+        <a href="https://github.com/kumakit" target="_blank" rel="noopener noreferrer" className="md:col-span-2 bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col group hover:shadow-lg transition-all hover:-translate-y-1 block">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
               <Github size={14} className="text-primary" />
@@ -75,17 +75,17 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Toukei Kentei Drill (2 cols) */}
-        <div className="md:col-span-2 bg-[#F5F3FF] rounded-[2.5rem] p-8 shadow-soft border border-purple-50 flex flex-col sm:flex-row justify-between sm:items-center gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
-          <div>
-            <span className="text-4xl mb-4 block">📊</span>
+        {/* Toukei Kentei Drill (1 col) */}
+        <div className="bg-[#F5F3FF] rounded-[2.5rem] p-8 shadow-soft border border-purple-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
+          <div className="flex justify-between items-start">
+            <span className="text-4xl">📊</span>
+            <SystemMonitor url="https://toukei-kentei-drill.vercel.app/" />
+          </div>
+          <div className="mt-auto">
             <a href="https://toukei-kentei-drill.vercel.app/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
               <h3 className="text-2xl font-bold text-primary group-hover:text-purple-600 transition-colors">Toukei Kentei Drill</h3>
               <p className="text-purple-900/60 text-sm mt-1 font-medium">Web Application on Vercel</p>
             </a>
-          </div>
-          <div className="sm:self-start">
-            <SystemMonitor url="https://toukei-kentei-drill.vercel.app/" />
           </div>
         </div>
 
