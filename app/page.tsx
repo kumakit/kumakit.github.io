@@ -1,5 +1,5 @@
 import { SystemMonitor } from "@/components/SystemMonitor";
-import { Github, MapPin, User, Terminal, Database, Globe, Bot } from "lucide-react";
+import { Github, MapPin, User, Terminal, Database, Globe, Bot, Book, BarChart3 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -31,7 +31,10 @@ export default function Home() {
         <div className="bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col gap-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full w-fit border border-gray-100">
-              <User size={14} className="text-accent-pink" />
+              <span className="icon-with-blob">
+                <User size={14} className="text-accent-pink" />
+                <span className="blob blob-pink"></span>
+              </span>
               <span className="text-xs font-semibold tracking-wide">PROFILE</span>
             </div>
             <img src="/icon.png" alt="KUMA" className="w-12 h-12 rounded-full shadow-sm border border-gray-100" />
@@ -64,7 +67,10 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-xs font-medium text-muted hover:text-primary transition-colors w-fit"
             >
-              <MapPin size={14} />
+              <span className="icon-with-blob">
+                <MapPin size={14} className="text-blue-500" />
+                <span className="blob blob-blue"></span>
+              </span>
               <span>Hachioji, Tokyo</span>
             </a>
           </div>
@@ -74,7 +80,10 @@ export default function Home() {
         <a href="https://github.com/kumakit" target="_blank" rel="noopener noreferrer" className="md:col-span-2 bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col group hover:shadow-lg transition-all hover:-translate-y-1 block">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
-              <Github size={14} className="text-primary" />
+              <span className="icon-with-blob">
+                <Github size={14} className="text-primary" />
+                <span className="blob blob-gray"></span>
+              </span>
               <span className="text-xs font-semibold tracking-wide">GITHUB</span>
             </div>
           </div>
@@ -89,7 +98,10 @@ export default function Home() {
         {/* MkDocs Card */}
         <div className="bg-[#F0FDF4] rounded-[2.5rem] p-8 shadow-soft border border-green-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
-            <span className="text-4xl">📘</span>
+            <span className="icon-with-blob text-2xl">
+              <Book size={32} className="text-green-600" />
+              <span className="blob blob-green blob-lg"></span>
+            </span>
             <SystemMonitor url="https://kumadata.netlify.app/" />
           </div>
           <div className="mt-auto">
@@ -103,7 +115,10 @@ export default function Home() {
         {/* Toukei Kentei Drill (1 col) */}
         <div className="bg-[#F5F3FF] rounded-[2.5rem] p-8 shadow-soft border border-purple-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
-            <span className="text-4xl">📊</span>
+            <span className="icon-with-blob text-2xl">
+              <BarChart3 size={32} className="text-purple-600" />
+              <span className="blob blob-purple blob-lg"></span>
+            </span>
             <SystemMonitor url="https://toukei-kentei-drill.vercel.app/" />
           </div>
           <div className="mt-auto">
@@ -117,7 +132,10 @@ export default function Home() {
         {/* OCI Data Apps (1 col) */}
         <div className="bg-[#EFF6FF] rounded-[2.5rem] p-8 shadow-soft border border-blue-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
-            <span className="text-4xl">🖥️</span>
+            <span className="icon-with-blob text-2xl">
+              <Terminal size={32} className="text-blue-600" />
+              <span className="blob blob-blue blob-lg"></span>
+            </span>
             <SystemMonitor url="https://apps.bearworks.uk/" />
           </div>
           <div className="mt-auto">
