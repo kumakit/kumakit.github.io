@@ -61,20 +61,6 @@ export default function Home() {
           </div>
         </a>
 
-        {/* Streamlit Card */}
-        <div className="bg-[#FFF5F5] rounded-[2.5rem] p-8 shadow-soft border border-red-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
-          <div className="flex justify-between items-start">
-            <span className="text-4xl">📱</span>
-            <SystemMonitor url="https://kumadata.streamlit.app/" />
-          </div>
-          <div className="mt-auto">
-            <a href="https://kumadata.streamlit.app/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
-              <h3 className="text-2xl font-bold text-primary group-hover:text-red-500 transition-colors">Data Apps</h3>
-              <p className="text-red-900/60 text-sm mt-1 font-medium">Main Streamlit Platform</p>
-            </a>
-          </div>
-        </div>
-
         {/* MkDocs Card */}
         <div className="bg-[#F0FDF4] rounded-[2.5rem] p-8 shadow-soft border border-green-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
@@ -103,7 +89,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* OCI Sub Apps (1 col) */}
+        {/* OCI Data Apps (1 col) */}
         <div className="bg-[#EFF6FF] rounded-[2.5rem] p-8 shadow-soft border border-blue-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
             <span className="text-4xl">🖥️</span>
@@ -111,8 +97,8 @@ export default function Home() {
           </div>
           <div className="mt-auto">
             <a href="https://apps.bearworks.uk/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
-              <h3 className="text-2xl font-bold text-primary group-hover:text-blue-600 transition-colors">Sub Apps</h3>
-              <p className="text-blue-900/60 text-sm mt-1 font-medium">External / OCI</p>
+              <h3 className="text-2xl font-bold text-primary group-hover:text-blue-600 transition-colors">Data Apps</h3>
+              <p className="text-blue-900/60 text-sm mt-1 font-medium">Web Application on OCI</p>
             </a>
           </div>
         </div>
