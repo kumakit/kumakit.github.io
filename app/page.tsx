@@ -34,7 +34,7 @@ export default function Home() {
               <User size={14} className="text-accent-pink" />
               <span className="text-xs font-semibold tracking-wide">THE PERSONA</span>
             </div>
-            <img src="/icon.png" alt="KUMA" className="w-12 h-12 rounded-2xl shadow-sm border border-gray-100" />
+            <img src="/icon.png" alt="KUMA" className="w-12 h-12 rounded-full shadow-sm border border-gray-100" />
           </div>
           <div>
             <h2 className="text-xl font-bold text-primary">KUMA</h2>
