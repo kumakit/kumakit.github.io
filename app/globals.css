@@ -39,6 +39,11 @@
     transform: scale(2.5);
   }
 
+  .blob-sm {
+    @apply blur-[4px];
+    transform: scale(0.8);
+  }
+
   .blob-blue { @apply bg-blue-400; }
   .blob-green { @apply bg-green-400; }
   .blob-purple { @apply bg-purple-400; }

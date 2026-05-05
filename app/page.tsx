@@ -20,14 +20,14 @@ export default function Home() {
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
             <span className="icon-with-blob animate-wave">
               <Hand size={40} className="text-accent-yellow" />
-              <span className="blob blob-yellow"></span>
+              <span className="blob blob-yellow blob-sm"></span>
             </span>{" "}
             HI! I DESIGN & BUILD <br />
             <span className="text-accent-blue">DATA EXPERIENCES</span>, <br />
             APPS{" "}
             <span className="icon-with-blob">
-              <Sparkles size={32} className="text-accent-yellow" />
-              <span className="blob blob-yellow"></span>
+              <Sparkles size={32} className="text-accent-pink" />
+              <span className="blob blob-pink blob-sm"></span>
             </span>{" "}
             & MODELS.
           </h1>
