@@ -32,7 +32,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full w-fit border border-gray-100">
               <User size={14} className="text-accent-pink" />
-              <span className="text-xs font-semibold tracking-wide">THE PERSONA</span>
+              <span className="text-xs font-semibold tracking-wide">PROFILE</span>
             </div>
             <img src="/icon.png" alt="KUMA" className="w-12 h-12 rounded-full shadow-sm border border-gray-100" />
           </div>
@@ -43,9 +43,9 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-auto">
-            <a 
-              href="https://www.google.com/maps/place/Hachioji,+Tokyo" 
-              target="_blank" 
+            <a
+              href="https://www.google.com/maps/place/Hachioji,+Tokyo"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-xs font-medium text-muted hover:text-primary transition-colors w-fit"
             >
@@ -79,8 +79,8 @@ export default function Home() {
           </div>
           <div className="mt-auto">
             <a href="https://kumadata.netlify.app/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
-              <h3 className="text-2xl font-bold text-primary group-hover:text-green-600 transition-colors">Data Science</h3>
-              <p className="text-green-900/60 text-sm mt-1 font-medium">Netlify / MkDocs</p>
+              <h3 className="text-2xl font-bold text-primary group-hover:text-green-600 transition-colors">Data Science Docs (MkDocs)</h3>
+              <p className="text-green-900/60 text-sm mt-1 font-medium">Hosted on Netlify</p>
             </a>
           </div>
         </div>
@@ -93,8 +93,8 @@ export default function Home() {
           </div>
           <div className="mt-auto">
             <a href="https://toukei-kentei-drill.vercel.app/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
-              <h3 className="text-2xl font-bold text-primary group-hover:text-purple-600 transition-colors">Toukei Kentei Drill</h3>
-              <p className="text-purple-900/60 text-sm mt-1 font-medium">Web Application on Vercel</p>
+              <h3 className="text-2xl font-bold text-primary group-hover:text-purple-600 transition-colors">Toukei Kentei Drill (Next.js)</h3>
+              <p className="text-purple-900/60 text-sm mt-1 font-medium">Hosted on Vercel</p>
             </a>
           </div>
         </div>
@@ -107,8 +107,8 @@ export default function Home() {
           </div>
           <div className="mt-auto">
             <a href="https://apps.bearworks.uk/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
-              <h3 className="text-2xl font-bold text-primary group-hover:text-blue-600 transition-colors">Data Apps</h3>
-              <p className="text-blue-900/60 text-sm mt-1 font-medium">Web Application on OCI</p>
+              <h3 className="text-2xl font-bold text-primary group-hover:text-blue-600 transition-colors">AI Apps (Streamlit + Ollama)</h3>
+              <p className="text-blue-900/60 text-sm mt-1 font-medium">Hosted on OCI via Cloudflare</p>
             </a>
           </div>
         </div>
