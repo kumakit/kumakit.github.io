@@ -39,9 +39,16 @@ export default function Home() {
               Data Scientist & Developer exploring the intersection of data, web, and automation.
             </p>
           </div>
-          <div className="mt-auto flex items-center gap-2 text-xs font-medium text-muted">
-            <MapPin size={14} />
-            <span>Earth</span>
+          <div className="mt-auto">
+            <a 
+              href="https://www.google.com/maps/place/Hachioji,+Tokyo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-xs font-medium text-muted hover:text-primary transition-colors w-fit"
+            >
+              <MapPin size={14} />
+              <span>Hachioji, Tokyo</span>
+            </a>
           </div>
         </div>
 
