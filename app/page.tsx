@@ -43,9 +43,9 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-auto">
-            <a 
-              href="https://www.google.com/maps/place/Hachioji,+Tokyo" 
-              target="_blank" 
+            <a
+              href="https://www.google.com/maps/place/Hachioji,+Tokyo"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-xs font-medium text-muted hover:text-primary transition-colors w-fit"
             >
@@ -89,10 +89,10 @@ export default function Home() {
         <div className="bg-[#F5F3FF] rounded-[2.5rem] p-8 shadow-soft border border-purple-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1">
           <div className="flex justify-between items-start">
             <span className="text-4xl">📊</span>
-            <SystemMonitor url="https://toukei-kentei-drill.vercel.app/" />
+            <SystemMonitor url="https://toukei.bearworks.uk/" />
           </div>
           <div className="mt-auto">
-            <a href="https://toukei-kentei-drill.vercel.app/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
+            <a href="https://toukei.bearworks.uk/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
               <h3 className="text-2xl font-bold text-primary group-hover:text-purple-600 transition-colors">Toukei Kentei Drill</h3>
               <p className="text-purple-900/60 text-sm mt-1 font-medium">Web Application on Vercel</p>
             </a>
