@@ -1,5 +1,5 @@
 import { SystemMonitor } from "@/components/SystemMonitor";
-import { Github, MapPin, User, Terminal } from "lucide-react";
+import { Github, MapPin, User, Terminal, Database, Globe, Bot } from "lucide-react";
 
 export default function Home() {
   return (
@@ -39,7 +39,22 @@ export default function Home() {
           <div>
             <h2 className="text-xl font-bold text-primary">KUMA</h2>
             <p className="text-muted mt-2 text-sm leading-relaxed">
-              Data Scientist & Developer exploring the <span class="icon-with-blob"><i class="ph ph-database"></i><span class="blob blob-blue"></span></span> intersection of data, <span class="icon-with-blob"><i class="ph ph-globe"></i><span class="blob blob-green"></span></span> web, and <span class="icon-with-blob"><i class="ph ph-robot"></i><span class="blob blob-purple"></span></span> automation.
+              Data Scientist & Developer exploring the{" "}
+              <span className="icon-with-blob">
+                <Database size={14} className="text-blue-500" />
+                <span className="blob blob-blue"></span>
+              </span>{" "}
+              intersection of data,{" "}
+              <span className="icon-with-blob">
+                <Globe size={14} className="text-green-500" />
+                <span className="blob blob-green"></span>
+              </span>{" "}
+              web, and{" "}
+              <span className="icon-with-blob">
+                <Bot size={14} className="text-purple-500" />
+                <span className="blob blob-purple"></span>
+              </span>{" "}
+              automation.
             </p>
           </div>
           <div className="mt-auto">

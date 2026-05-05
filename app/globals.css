@@ -17,4 +17,24 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  /* Icon with Blob effect */
+  .icon-with-blob {
+    @apply relative inline-flex items-center justify-center mx-1 align-middle;
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .icon-with-blob svg {
+    @apply relative z-10;
+  }
+
+  .blob {
+    @apply absolute inset-0 rounded-full blur-[8px] opacity-40;
+    transform: scale(1.5);
+  }
+
+  .blob-blue { @apply bg-blue-400; }
+  .blob-green { @apply bg-green-400; }
+  .blob-purple { @apply bg-purple-400; }
 }
