@@ -111,10 +111,10 @@ export default function Home() {
               <Book size={32} className="text-green-600" />
               <span className="blob blob-green blob-lg"></span>
             </span>
-            <SystemMonitor url="https://kumadata.netlify.app/" />
+            <SystemMonitor url="https://docs.bearworks.uk/" />
           </div>
           <div className="mt-auto">
-            <a href="https://kumadata.netlify.app/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
+            <a href="https://docs.bearworks.uk/" target="_blank" rel="noopener noreferrer" className="block focus:outline-none">
               <h3 className="text-2xl font-bold text-primary group-hover:text-green-600 transition-colors">Data Science Docs (MkDocs)</h3>
               <p className="text-green-900/60 text-sm mt-1 font-medium">Hosted on Netlify</p>
             </a>
