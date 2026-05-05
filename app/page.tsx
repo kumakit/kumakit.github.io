@@ -8,7 +8,7 @@ export default function Home() {
       <header className="flex justify-center pt-4">
         <div className="bg-white px-4 py-2 rounded-full shadow-soft flex items-center gap-2 text-sm font-medium border border-gray-100">
           <img src="/icon.png" alt="Bear Icon" className="w-5 h-5 rounded-full" />
-          <span>Index</span>
+          <span>bearworks.uk</span>
         </div>
       </header>
 
