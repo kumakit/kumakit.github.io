@@ -39,7 +39,7 @@ export default function Home() {
           <div>
             <h2 className="text-xl font-bold text-primary">KUMA</h2>
             <p className="text-muted mt-2 text-sm leading-relaxed">
-              Data Scientist & Developer exploring the intersection of data, web, and automation.
+              Data Scientist & Developer exploring the <span class="icon-with-blob"><i class="ph ph-database"></i><span class="blob blob-blue"></span></span> intersection of data, <span class="icon-with-blob"><i class="ph ph-globe"></i><span class="blob blob-green"></span></span> web, and <span class="icon-with-blob"><i class="ph ph-robot"></i><span class="blob blob-purple"></span></span> automation.
             </p>
           </div>
           <div className="mt-auto">
