@@ -6,8 +6,8 @@ export default function Home() {
     <main className="max-w-5xl w-full flex flex-col gap-8 pb-12">
       {/* Top Header / Pill */}
       <header className="flex justify-center pt-4">
-        <div className="bg-white px-6 py-2 rounded-full shadow-soft flex items-center gap-2 text-sm font-medium border border-gray-100">
-          <Terminal size={16} className="text-accent-blue" />
+        <div className="bg-white px-4 py-2 rounded-full shadow-soft flex items-center gap-2 text-sm font-medium border border-gray-100">
+          <img src="/icon.png" alt="Bear Icon" className="w-5 h-5 rounded-full" />
           <span>Index</span>
         </div>
       </header>
@@ -29,9 +29,12 @@ export default function Home() {
 
         {/* Profile Card (1 col) */}
         <div className="bg-white rounded-[2.5rem] p-8 shadow-soft border border-gray-100 flex flex-col gap-6">
-          <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full w-fit border border-gray-100">
-            <User size={14} className="text-accent-pink" />
-            <span className="text-xs font-semibold tracking-wide">THE PERSONA</span>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-full w-fit border border-gray-100">
+              <User size={14} className="text-accent-pink" />
+              <span className="text-xs font-semibold tracking-wide">THE PERSONA</span>
+            </div>
+            <img src="/icon.png" alt="KUMA" className="w-12 h-12 rounded-2xl shadow-sm border border-gray-100" />
           </div>
           <div>
             <h2 className="text-xl font-bold text-primary">KUMA</h2>

@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "bearworks.uk",
   description: "Personal Hub Site and Digital Garden",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
