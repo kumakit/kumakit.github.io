@@ -1,5 +1,5 @@
 import { SystemMonitor } from "@/components/SystemMonitor";
-import { Github, MapPin, User, Terminal, Database, Globe, Bot, Book, BarChart3, Hand, Sparkles } from "lucide-react";
+import { Github, MapPin, User, Terminal, Database, Globe, Bot, Book, BarChart3, Hand, Sparkles, CloudSun } from "lucide-react";
 
 export default function Home() {
   return (
@@ -154,6 +154,20 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        {/* Weather Dashboard (1 col) */}
+        <a href="/weather" className="bg-[#FFF7ED] rounded-[2.5rem] p-8 shadow-soft border border-orange-50 flex flex-col gap-6 group hover:shadow-lg transition-all hover:-translate-y-1 block">
+          <div className="flex justify-between items-start">
+            <span className="icon-with-blob text-2xl">
+              <CloudSun size={32} className="text-orange-500" />
+              <span className="blob blob-yellow blob-lg"></span>
+            </span>
+          </div>
+          <div className="mt-auto">
+            <h3 className="text-2xl font-bold text-primary group-hover:text-orange-500 transition-colors">Weather Dashboard</h3>
+            <p className="text-orange-900/60 text-sm mt-1 font-medium">八王子 🏠 ↔ 新宿 🏢</p>
+          </div>
+        </a>
 
       </div>
     </main>
