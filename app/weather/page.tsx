@@ -18,6 +18,7 @@ const MOCK_DATA: WeatherData = {
       overview:
         "今日は終日晴れの穏やかな天気が続きます。最高気温は25℃で、昨日より2℃高くなる見込みです。湿度も低く過ごしやすい一日でしょう。",
       umbrella: false,
+      umbrellaAdvice: "今日は終日晴れのため、傘の心配はなさそうです。",
       clothingAdvice:
         "日中は半袖で快適に過ごせます。朝晩は少しひんやりするので、薄手のカーディガンを持っておくと安心です。",
       daily: {
@@ -57,6 +58,7 @@ const MOCK_DATA: WeatherData = {
       overview:
         "朝は晴れ間が広がりますが、夕方から雲が増える見込みです。最高気温は25℃で前日より3℃高く、日中は半袖で過ごせる暖かさです。",
       umbrella: false,
+      umbrellaAdvice: "夕方から雲が増えますが、雨の心配はありません。傘は不要でしょう。",
       clothingAdvice:
         "日中は半袖でOK。朝晩は薄手のカーディガンがあると安心です。",
       daily: {
@@ -170,11 +172,6 @@ export default function WeatherPage() {
           </a>
         </div>
         <div className="flex items-center gap-2">
-          {usingMock && (
-            <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-50 text-amber-600 border border-amber-200 font-medium">
-              デモデータ
-            </span>
-          )}
           <span className="text-xs text-gray-400">
             {getRelativeTime(data.updatedAt)} に更新
           </span>

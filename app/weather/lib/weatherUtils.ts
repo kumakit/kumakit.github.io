@@ -26,6 +26,7 @@ export interface LocationWeather {
   name: string;
   overview: string;
   umbrella: boolean;
+  umbrellaAdvice: string;
   clothingAdvice: string;
   daily: DailySummary;
   hourly: {

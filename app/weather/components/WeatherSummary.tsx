@@ -16,11 +16,10 @@ export default function WeatherSummary({ locations }: WeatherSummaryProps) {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {/* 傘の要否カード */}
       <div
-        className={`rounded-3xl p-6 border transition-all ${
-          needsUmbrella
+        className={`rounded-3xl p-6 border transition-all ${needsUmbrella
             ? "bg-gradient-to-br from-indigo-50 to-purple-50 border-indigo-100"
             : "bg-gradient-to-br from-sky-50 to-cyan-50 border-sky-100"
-        }`}
+          }`}
       >
         <div className="flex items-center gap-3 mb-3">
           <span className="text-4xl" role="img" aria-label={needsUmbrella ? "umbrella" : "sun"}>
@@ -35,6 +34,9 @@ export default function WeatherSummary({ locations }: WeatherSummaryProps) {
             </p>
           </div>
         </div>
+        <p className="text-sm text-gray-600 leading-relaxed mt-1 line-clamp-2">
+          {locations[0]?.overview}
+        </p>
         {/* 各拠点の降水確率 */}
         <div className="flex gap-4 mt-2">
           {locations.map((loc) => (
